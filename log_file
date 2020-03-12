@@ -1,0 +1,33 @@
+2020-03-02 09:41:48,994 - ISR.utils.train_helper - INFO - 
+Training details:
+2020-03-02 09:41:48,995 - ISR.utils.train_helper - INFO -   training_parameters: 
+2020-03-02 09:41:48,995 - ISR.utils.train_helper - INFO -     lr_train_dir: /home/minhhoang/image-super-resolution/data/training/div2k/DIV2K_train_LR_bicubic/X2/
+2020-03-02 09:41:48,995 - ISR.utils.train_helper - INFO -     hr_train_dir: /home/minhhoang/image-super-resolution/data/training/div2k/DIV2K_train_HR/
+2020-03-02 09:41:48,995 - ISR.utils.train_helper - INFO -     lr_valid_dir: /home/minhhoang/image-super-resolution/data/training/div2k/DIV2K_train_LR_bicubic/X2/
+2020-03-02 09:41:48,995 - ISR.utils.train_helper - INFO -     hr_valid_dir: /home/minhhoang/image-super-resolution/data/training/div2k/DIV2K_train_HR/
+2020-03-02 09:41:48,995 - ISR.utils.train_helper - INFO -     loss_weights: {'generator': 0.0, 'feature_extractor': 0.0833, 'discriminator': 0.01}
+2020-03-02 09:41:48,995 - ISR.utils.train_helper - INFO -     log_dirs: {'logs': './logs', 'weights': './weights'}
+2020-03-02 09:41:48,995 - ISR.utils.train_helper - INFO -     fallback_save_every_n_epochs: 2
+2020-03-02 09:41:48,995 - ISR.utils.train_helper - INFO -     dataname: div2k
+2020-03-02 09:41:48,995 - ISR.utils.train_helper - INFO -     n_validation: 40
+2020-03-02 09:41:48,995 - ISR.utils.train_helper - INFO -     flatness: {'min': 0.0, 'max': 0.15, 'increase': 0.01, 'increase_frequency': 5}
+2020-03-02 09:41:48,995 - ISR.utils.train_helper - INFO -     learning_rate: {'initial_value': 0.0004, 'decay_factor': 0.5, 'decay_frequency': 30}
+2020-03-02 09:41:48,995 - ISR.utils.train_helper - INFO -     adam_optimizer: {'beta1': 0.9, 'beta2': 0.999, 'epsilon': None}
+2020-03-02 09:41:48,995 - ISR.utils.train_helper - INFO -     losses: {'generator': 'mae', 'discriminator': 'binary_crossentropy', 'feature_extractor': 'mse'}
+2020-03-02 09:41:48,995 - ISR.utils.train_helper - INFO -     metrics: {'generator': <function PSNR_Y at 0x7fe8281795f0>}
+2020-03-02 09:41:48,995 - ISR.utils.train_helper - INFO -     lr_patch_size: 40
+2020-03-02 09:41:48,995 - ISR.utils.train_helper - INFO -     steps_per_epoch: 20
+2020-03-02 09:41:48,995 - ISR.utils.train_helper - INFO -     batch_size: 4
+2020-03-02 09:41:48,995 - ISR.utils.train_helper - INFO -     starting_epoch: 0
+2020-03-02 09:41:48,995 - ISR.utils.train_helper - INFO -   generator: 
+2020-03-02 09:41:48,995 - ISR.utils.train_helper - INFO -     name: rrdn
+2020-03-02 09:41:48,995 - ISR.utils.train_helper - INFO -     parameters: {'C': 4, 'D': 3, 'G': 64, 'G0': 64, 'T': 10, 'x': 2}
+2020-03-02 09:41:48,996 - ISR.utils.train_helper - INFO -     weights_generator: None
+2020-03-02 09:41:48,996 - ISR.utils.train_helper - INFO -   discriminator: 
+2020-03-02 09:41:48,996 - ISR.utils.train_helper - INFO -     name: srgan-large
+2020-03-02 09:41:48,996 - ISR.utils.train_helper - INFO -     weights_discriminator: None
+2020-03-02 09:41:48,996 - ISR.utils.train_helper - INFO -   feature_extractor: 
+2020-03-02 09:41:48,996 - ISR.utils.train_helper - INFO -     name: vgg19
+2020-03-02 09:41:48,996 - ISR.utils.train_helper - INFO -     layers: [5, 9]
+2020-03-02 09:41:58,301 - ISR.train.trainer - INFO - Epoch 0/1
+2020-03-02 09:41:58,308 - ISR.train.trainer - INFO - Current learning rate: 0.00039999998989515007
